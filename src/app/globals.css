@@ -1,0 +1,62 @@
+/*
+ * Ported from the Vite app's src/index.css.
+ * Font files are now loaded through next/font (see src/app/fonts.ts) instead of the Google Fonts
+ * @import and hand-written @font-face rules. The family mapping is unchanged:
+ *   font-primary      -> "TT Bakers"      = /font/OrangeAvenueDEMO-Regular.otf (400)
+ *   font-primary-bold -> "TT Bakers Bold" = /font/TT_Bakers_Trial_Bold.ttf (bold)
+ *   font-secondary    -> Inter (variable, 100-900)
+ * `inline` makes each utility reference the next/font variable directly, so it resolves on any element.
+ */
+@import "tailwindcss";
+
+@theme inline {
+  --font-primary-bold: var(--font-tt-bakers-bold), sans-serif;
+  --font-primary: var(--font-tt-bakers), sans-serif;
+  --font-secondary: var(--font-inter), sans-serif;
+}
+
+/*
+ * Page transition ("bands", see src/components/PageTransitionLayout.tsx). The page content runs its own JS-driven
+ * clip-path sweep, so the browser's default crossfades are switched off: the old page snapshot simply holds still
+ * underneath, the rest of the shell (root) swaps instantly, and the fixed navbar and social bar stay on top, unmoved.
+ */
+::view-transition {
+  pointer-events: none;
+}
+::view-transition-old(root) {
+  display: none;
+}
+::view-transition-new(root) {
+  animation: none;
+}
+::view-transition-group(.page-bands),
+::view-transition-old(.page-bands),
+::view-transition-new(.page-bands) {
+  animation: none;
+}
+::view-transition-image-pair(.page-bands) {
+  overflow: clip;
+}
+::view-transition-group(site-header),
+::view-transition-group(social-bar) {
+  animation: none;
+  z-index: 100;
+}
+::view-transition-old(site-header),
+::view-transition-old(social-bar) {
+  display: none;
+}
+::view-transition-new(site-header),
+::view-transition-new(social-bar) {
+  animation: none;
+}
+
+/* Projects gallery autoplay rail (src/sections/ProjectsSection.tsx): the active segment fills over one interval. */
+@keyframes projects-rail {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
