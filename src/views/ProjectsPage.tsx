@@ -36,9 +36,9 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
         />
 
-        {/* Elegant Hover Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#4a1c13]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 md:p-10" aria-hidden="true">
-          <div className="transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+        {/* Always-visible title overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#4a1c13]/90 via-transparent to-transparent flex flex-col justify-end p-8 md:p-10" aria-hidden="true">
+          <div>
             <h3 className="text-white font-primary text-2xl md:text-3xl leading-snug mb-3">
               {project.title}
             </h3>
