@@ -157,11 +157,13 @@ Share the property details, floor plan if available, number of rooms, broad desi
     workingDays: "Monday – Saturday",
     workingHours: "9 AM to 9 PM",
     images: [
-      "/hom-interiors-service.png",
-      "/projectsImg/varaprasad/vp-img1.png",
-      "/projectsImg/varaprasad/vp-img5.png",
-      "/projectsImg/varaprasad/vp-img11.png",
-      "/projectsImg/varaprasad/vp-img15.png",
+      "/hom-interiors-service.webp",
+      "/hall-area.webp",
+      "/Bed-room.webp",
+      "/projectsImg/bougainvillea-villa/kitchen.webp",
+      "/projectsImg/sumadhura-horizon/hall-area-two.webp",
+      "/projectsImg/sumadhura-horizon/master-bedroom-one.webp",
+      "/projectsImg/sumadhura-horizon/open-kitchen.webp",
     ],
     stats: [
       { value: "15+", label: "Years of experience in home interiors" },
@@ -175,12 +177,12 @@ Share the property details, floor plan if available, number of rooms, broad desi
       { title: "Everyday Function", text: "Smart storage and practical planning so beauty never gets in the way of daily living." },
     ],
     gallery: [
-      { src: "/hall-area.png", alt: "Living hall interior design by Bright Arena Interiors" },
-      { src: "/Bed-room.PNG", alt: "Bedroom interior design by Bright Arena Interiors" },
-      { src: "/projectsImg/varaprasad/vp-img1.png", alt: "Home interior design example in Hyderabad" },
-      { src: "/projectsImg/varaprasad/vp-img5.png", alt: "Modern residential interior in Hyderabad" },
-      { src: "/projectsImg/varaprasad/vp-img11.png", alt: "Premium villa interior in Hyderabad" },
-      { src: "/projectsImg/varaprasad/vp-img15.png", alt: "Apartment interior design in Hyderabad" },
+      { src: "/hall-area.webp", alt: "Living hall interior design by Bright Arena Interiors" },
+      { src: "/Bed-room.webp", alt: "Bedroom interior design by Bright Arena Interiors" },
+      { src: "/projectsImg/bougainvillea-villa/kitchen.webp", alt: "Modular kitchen interior design in Hyderabad" },
+      { src: "/projectsImg/sumadhura-horizon/hall-area-two.webp", alt: "Modern living hall interior in Hyderabad" },
+      { src: "/projectsImg/sumadhura-horizon/master-bedroom-one.webp", alt: "Master bedroom interior design in Hyderabad" },
+      { src: "/projectsImg/sumadhura-horizon/open-kitchen.webp", alt: "Open kitchen with breakfast counter in Hyderabad" },
     ],
     faqs: [
       {

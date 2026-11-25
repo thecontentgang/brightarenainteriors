@@ -121,7 +121,7 @@ const testimonials: Testimonial[] = [
   {
     id: 10,
     type: "instagram",
-    name: "Rohith & Naya",
+    name: "Darshan & Kunjal",
     instagramCode: "DTK27OGkTyh",
     thumbnailUrl: "/insta-review-1.png",
     description:
@@ -132,7 +132,7 @@ const testimonials: Testimonial[] = [
   {
     id: 11,
     type: "instagram",
-    name: "Darshan & Kunjal",
+    name: "Rohith & Naya",
     instagramCode: "C89lmIDyDrP",
     thumbnailUrl: "/insta-review-2.png",
     description:

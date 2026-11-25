@@ -72,7 +72,7 @@ const videoTestimonials: VideoTestimonial[] = [
   {
     id: 7,
     platform: "instagram",
-    client: "Rohith & Naya",
+    client: "Darshan & Kunjal",
     project: "3 BHK Home Transformation",
     duration: "Reel",
     instagramCode: "DTK27OGkTyh",
@@ -81,7 +81,7 @@ const videoTestimonials: VideoTestimonial[] = [
   {
     id: 8,
     platform: "instagram",
-    client: "Darshan & Kunjal",
+    client: "Rohith & Laya",
     project: "4 BHK 3D to Reality",
     duration: "Reel",
     instagramCode: "C89lmIDyDrP",
